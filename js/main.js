@@ -53,22 +53,25 @@ function month(m){
 			month = "";
 	}
 }
-
-
-
+function aux(t){
+	if(t<10){
+		return "0"+t;
+	}
+	else{
+		return t;
+	}
+};
+	
 function date(){
 	
 	setInterval(function(){
 		var d = new Date();
-		document.getElementById("date").innerHTML = d;
-		console.log(d.getFullYear());
-		var m = d.getMonth();
-		console.log(month(m));
-		console.log(d.getDate());
-		console.log(d.getHours());
-		console.log(d.getMinutes());
-		console.log(d.getSeconds());
-
+		document.getElementById("year").innerHTML  = d.getFullYear();
+		document.getElementById("month").innerHTML = month(d.getMonth());
+		document.getElementById("day").innerHTML   = aux(d.getDate());
+		document.getElementById("sec").innerHTML   = aux(d.getSeconds());
+		document.getElementById("min").innerHTML   = aux(d.getMinutes());
+		document.getElementById("hour").innerHTML  = aux(d.getHours());  
 	},1000);
 }
 

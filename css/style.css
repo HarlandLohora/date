@@ -1,6 +1,12 @@
-section{
-	display: flex;
+body{
+	background-color: black;
+	color: white;
+	overflow: hidden;
+	font-size: 2em;
+	font-family: 'Inconsolata', monospace;
 }
-#main{
-
+.row div{
+	text-align: center;
+	border: 1px white solid;
+	border-radius: 10px;
 }
