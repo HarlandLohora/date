@@ -2,11 +2,35 @@ body{
 	background-color: black;
 	color: white;
 	overflow: hidden;
-	font-size: 2em;
+	
 	font-family: 'Inconsolata', monospace;
 }
 .row div{
 	text-align: center;
-	border: 1px white solid;
-	border-radius: 10px;
+	vertical-align: middle;
+	font-size: 3em;
+}
+
+
+.center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+footer{
+	position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	font-size: 1.3em;
+}
+
+a{
+	color:white;
+}
+a:hover{
+	color:red;
+	text-decoration: none;
 }
